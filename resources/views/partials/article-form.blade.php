@@ -1,14 +1,3 @@
-{{-- <p>Créer un article</p>
-<p><strong>Titre :</strong></p>
-<input type="text" name="title" placeholder="Titre de l'article" value="{{old('title')}}">
-
-<p><strong>Body :</strong></p>
-<textarea id="" cols="30" rows="10" name="body" placeholder="Contenu de l'article">{{old('body'), isset($article->body) ? $article->body : null}}</textarea>
-
-<p><strong>Image :</strong></p>
-<input type="file" name="image">
-
-<button type="submit">Enregistrer</button> --}}
 
 <p><strong>Titre :</strong></p>
 <input type="text" name="title" value="{{ old('title',  isset($article->title) ? $article->title : null) }}">

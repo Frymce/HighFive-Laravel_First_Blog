@@ -21,19 +21,6 @@ class SessionsController extends Controller
         }
     }
 
-    // public function login(Request $request){
-    //     User::([
-    //         'email'=> $request['email'],
-    //         'password'=> $request['password'],
-    //     ]);
-
-    //     $user = User::where('email', $request['email'])->firstOrFail();
-    //     Auth::login($user);
-    //     session()->flash('success_message', 'Vous êtes connecté avec succès !');
-
-    //     return redirect('/');
-    // }
-
     public function logout(){
         Auth::logout();
 
